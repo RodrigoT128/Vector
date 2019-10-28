@@ -92,6 +92,10 @@ public class Numeroextenso extends Modelo {
 			else if (parte[0] >= 1 && parte[1] != 0 && parte[2] != 0) { 				// centena sem numero 0
 				extenso = centena[ parte[0] ] + conexaoE + dezena[ parte[1] ] + conexaoE + unidade[ parte[2] ];
 			}
+			else if (parte[0] == 0 && parte[1] != 0 && parte[2] != 0) {
+				extenso = dezena[ parte[0] ] + conexaoE + unidade[ parte[1] ];
+				System.out.println("caiu aqui");
+			}
 		}
 		return (extenso);
 	}
