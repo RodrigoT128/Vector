@@ -1,8 +1,17 @@
 package control;
 
+import javax.swing.JOptionPane;
+
 import model.*;
 
+/**
+ * @author Rodrigo Toledo Gomes
+ * Classe recebe e organiza as Strings para apresentação
+ */
 public class Controle {
+	/**
+	 * @param args recebe Strings e apresenta Resultado apartir da mascara preparada
+	 */
 	public static void main(String[] args) {
 		
 		Numeroextenso numero = new Numeroextenso();
@@ -14,9 +23,9 @@ public class Controle {
 		String conexaomil = " mil ";
 		
 		if (digitos.length >= 4) {
-			System.out.println(parte1 + conexaomil + parte2);
+			JOptionPane.showMessageDialog(null, parte1 + conexaomil + parte2);
 		} else {
-			System.out.println(parte2);
+			JOptionPane.showInputDialog(null, parte2);
 		}
 	}
 }

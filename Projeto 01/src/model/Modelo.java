@@ -27,7 +27,7 @@ public class Modelo {
 	}
 	/**
 	 * @param x recebe numero aleatorio
-	 * @return retorna primeiro array com até 3 digitos
+	 * @return retorna o primeiro array com até 3 digitos
 	 */
 	public Integer[] getParte1(int x) {
 		List<Integer> parte = new ArrayList<Integer>();
@@ -36,12 +36,11 @@ public class Modelo {
 	}
 	/**
 	 * @param x recebe numero aleatorio
-	 * @return retorna segundo array com até 3 digitos
+	 * @return retorna o segundo array com até 3 digitos
 	 */
 	public Integer[] getParte2(int x) {
 		List<Integer> parte2 = new ArrayList<Integer>();
-		x = x % 1000;
-		collectParte2(x, parte2);
+		collectParte2(x % 1000, parte2);
 		return parte2.toArray(new Integer[]{});
 	}
 	/**
